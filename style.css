@@ -78,3 +78,8 @@ footer { text-align: center; padding: 28px; color: var(--muted); font-size: .85r
   .nav nav a { margin: 0 10px 0 0; }
   .hero h1 { font-size: 2rem; }
 }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px 28px; }
+.skills h3 { margin: 0 0 4px; font-size: 1rem; color: var(--accent); }
+.skills p { margin: 0; font-size: .93rem; color: var(--text); }
