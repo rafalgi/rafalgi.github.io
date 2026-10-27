@@ -1,6 +1,5 @@
 # rafalgibala.github.io
 
-Osobista strona w stylu piotrpiekos.github.io. Czysty HTML + CSS, bez Jekylla i buildów.
 
 ## Struktura
 ```
