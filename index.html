@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rafał Gibała | AI Developer</title>
-  <meta name="description" content="Rafał Gibała, AI Python Developer working on RAG systems, information retrieval and efficient ML.">
+  <title>Rafał Gibała | AI Python Developer</title>
+  <meta name="description" content="Rafał Gibała, Python engineer focused on Generative AI: LLM applications, RAG pipelines and agentic workflows.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -27,17 +27,17 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <!-- TODO: wrzuć swoje zdjęcie jako img/photo.jpg (kwadratowe, min. 400x400) -->
+  <!-- Zdjęcie: wrzuć jako img/photo.jpg (kwadratowe, min. 400x400) -->
   <img class="avatar" src="img/photo.jpg" alt="Rafał Gibała" onerror="this.style.display='none'">
   <h1>Rafał Gibała</h1>
-  <p class="subtitle">AI Python Developer</p>
+  <p class="subtitle">AI Python Developer &middot; Junior Researcher</p>
   <hr>
-  <p class="tagline">Retrieval-Augmented Generation &middot; Information Retrieval &middot; Efficient ML</p>
+  <p class="tagline">LLM Applications &middot; RAG Pipelines &middot; Agentic Workflows</p>
   <div class="social">
-    <!-- TODO: podmień linki -->
-    <a href="https://scholar.google.com/citations?user=TODO" target="_blank">Google Scholar</a>
-    <a href="https://github.com/TODO" target="_blank">GitHub</a>
+    <a href="https://github.com/rafalgi" target="_blank">GitHub</a>
+    <!-- TODO: wklej adres swojego profilu LinkedIn -->
     <a href="https://www.linkedin.com/in/TODO/" target="_blank">LinkedIn</a>
+    <a href="mailto:rafal13996@gmail.com">Email</a>
   </div>
 </section>
 
@@ -47,55 +47,56 @@
 <section id="about">
   <h2>About me</h2>
   <p>
-    I am an AI Python Developer at <a href="https://cobrick.com" target="_blank">co.brick</a>, a company building an AI platform for industry,
-    and an MSc student in Computer Science (Machine Learning specialization) at the
-    Faculty of Applied Mathematics, <a href="https://www.polsl.pl" target="_blank">Silesian University of Technology</a>.
+    I am a Python engineer focused on <strong>Generative AI</strong>: LLM applications, RAG pipelines and
+    agentic workflows taken from prototype to production. At <strong>co.brick</strong> I am the sole developer
+    of an enterprise AI platform running on Google Cloud, and in parallel I do RAG research at the
+    <strong>Institute of Theoretical and Applied Informatics, Polish Academy of Sciences (IITiS PAN)</strong>.
   </p>
   <p>
-    My work sits between applied engineering and research. I am mostly interested in
-    <strong>Retrieval-Augmented Generation</strong>: how to evaluate RAG pipelines, how to choose their hyperparameters
-    without exhaustive search, and how to make retrieval reliable in real, messy industrial data.
-    I also work on <strong>efficient ML</strong>, using LLMs to guide the optimization of neural networks for edge devices.
+    My research is about information retrieval and RAG optimisation: chunking strategies, embedding and retrieval
+    hyperparameters, pipeline evaluation, and lately also LLM agents that compress neural networks for edge devices.
+    In 2026 I co-authored three peer-reviewed workshop papers at <strong>ACM CIKM</strong> and <strong>ECML PKDD</strong>.
   </p>
   <p>
-    I contribute to the <strong>PACK</strong> Horizon Europe research project. In 2026 I co-authored
-    three workshop papers: two at <strong>ECML PKDD 2026</strong> (Naples) and one, as first author,
-    at <strong>CIKM 2026</strong> (Rome).
+    I study Computer Science at the Faculty of Applied Mathematics,
+    <a href="https://www.polsl.pl" target="_blank">Silesian University of Technology</a>.
+    Day to day I work with LangChain, LangGraph, Google ADK, MCP, vector databases and AI-assisted development tools.
   </p>
-  <!-- TODO (opcjonalnie): akapit o zainteresowaniach poza AI, jak u Piotra -->
+  <p>
+    Apart from AI, I train judo and I run.
+  </p>
 </section>
 
 <!-- ============ PUBLICATIONS ============ -->
 <section id="publications">
   <h2>Publications</h2>
 
-  <!-- TODO: wpisz pełne tytuły, listę autorów i linki (arXiv / proceedings) -->
-  <a class="pub" href="#" target="_blank">
+  <div class="pub">
     <div class="pub-body">
-      <h3>LLM-Guided Optimization of Neural Networks for Edge Devices</h3>
-      <span class="venue">CIKM 2026 &middot; GREEN-AI Workshop</span>
+      <h3>An LLM-Guided Agentic Optimization Toolbox for Edge-Deployable Neural Networks</h3>
+      <span class="venue">ACM CIKM 2026 &middot; GREEN-AI Workshop &middot; Rome</span>
       <p class="authors"><strong>Rafał Gibała</strong>, Mert Nakıp</p>
-      <p class="desc">Using large language models to steer architecture and compression choices for resource-constrained edge deployment. Developed within the PACK Horizon Europe project.</p>
+      <p class="desc">An LLM agent that automatically compresses neural networks for edge devices under user-defined accuracy and memory constraints.</p>
     </div>
-  </a>
+  </div>
 
-  <a class="pub" href="#" target="_blank">
+  <div class="pub">
     <div class="pub-body">
-      <h3>ProHES: Proactive Hyperparameter Estimation &amp; Selection for RAG Pipelines</h3>
-      <span class="venue">ECML PKDD 2026 &middot; SHIELD-AI Workshop</span>
-      <p class="authors">TODO co-authors, <strong>Rafał Gibała</strong></p>
-      <p class="desc">A framework for choosing retrieval hyperparameters (embedding model, distance metric, chunking, top-k) in RAG pipelines without exhaustive grid search, evaluated on MS MARCO, TriviaQA and HotpotQA.</p>
+      <h3>Proactive Hyperparameter Estimation &amp; Selection Framework for Information Retrieval in LLMs</h3>
+      <span class="venue">ECML PKDD 2026 &middot; SHIELD-AI Workshop &middot; Naples</span>
+      <p class="authors">Mert Nakıp, <strong>Rafał Gibała</strong>, Sławomir Nowak</p>
+      <p class="desc">ProHES: an analytical framework that selects the similarity metric and the number of retrieved documents for RAG without exhaustive search.</p>
     </div>
-  </a>
+  </div>
 
-  <a class="pub" href="#" target="_blank">
+  <div class="pub">
     <div class="pub-body">
-      <h3>T-MATE</h3>
-      <span class="venue">ECML PKDD 2026 &middot; SOMI-2026 Workshop</span>
-      <p class="authors">TODO co-authors, <strong>Rafał Gibała</strong></p>
-      <p class="desc">TODO: 1-2 zdania opisu.</p>
+      <h3>Trend-based Multi-Modal Anomaly and Cyber Threat Detection with Traceable Explainability for Cloud Services</h3>
+      <span class="venue">ECML PKDD 2026 &middot; SOMI-2026 Workshop &middot; Naples</span>
+      <p class="authors">Mert Nakıp, <strong>Rafał Gibała</strong>, A. Grygar, Sławomir Nowak</p>
+      <p class="desc">T-MATE: an explainable detector of anomalies and cyber threats in cloud services, combining telemetry forecasting with LLM-based log analysis.</p>
     </div>
-  </a>
+  </div>
 </section>
 
 <!-- ============ PROJECTS ============ -->
@@ -104,34 +105,45 @@
   <div class="grid">
 
     <div class="card">
-      <h3>ProHES framework</h3>
-      <p>Open research framework for hyperparameter optimization in RAG retrieval. Benchmarks six embedding models across five distance metrics, with local LLMs, dense and sparse encoders, and Langfuse monitoring.</p>
-      <div class="tags"><span>Python</span><span>Qdrant</span><span>Ollama</span><span>SentenceTransformers</span><span>Langfuse</span></div>
-      <!-- <a class="more" href="https://github.com/TODO/prohes">Code &rarr;</a> -->
+      <h3>AI recruitment platform</h3>
+      <p>Internal platform that helps an HR team search, assess and contact candidates, kept in sync with the company CRM and used daily in production. Built end to end: data pipeline, AI layer, UI and cloud infrastructure.</p>
+      <div class="tags"><span>LangGraph</span><span>Google ADK</span><span>Gemini</span><span>FastAPI</span><span>GKE</span></div>
     </div>
 
     <div class="card">
-      <h3>Production RAG pipeline</h3>
-      <p>Scalable retrieval pipeline with graph-based knowledge extraction, vector search on Qdrant and deployment on Kubernetes, including snapshot-based index management.</p>
-      <div class="tags"><span>Kubernetes</span><span>Qdrant</span><span>Graphify</span></div>
+      <h3>Enterprise AI agents</h3>
+      <p>Multi-tool agents integrated with corporate databases, REST APIs and enterprise systems, delivered as a web app and a Slack assistant, with Langfuse tracing and guardrails against unreliable answers.</p>
+      <div class="tags"><span>LangGraph</span><span>Slack SDK</span><span>Langfuse</span><span>PostgreSQL</span></div>
     </div>
 
     <div class="card">
-      <h3>Web &rarr; Fact Base</h3>
-      <p>Tool that turns web pages into a structured base of facts, each linked to its source, and tracks how those facts change over time.</p>
-      <div class="tags"><span>LLM extraction</span><span>Web crawling</span><span>Change tracking</span></div>
+      <h3>Document RAG pipelines</h3>
+      <p>Pipelines that turn unstructured documents into structured, searchable knowledge: parsing, chunking, embeddings, vector search and LLM-based extraction.</p>
+      <div class="tags"><span>LlamaParse</span><span>Qdrant</span><span>Embeddings</span><span>LangChain</span></div>
     </div>
 
     <div class="card">
-      <h3>Market signal radar</h3>
-      <p>Agent that monitors industrial companies daily and surfaces buying signals for sales teams, producing a ready-to-read HTML/PDF report.</p>
-      <div class="tags"><span>Agents</span><span>LLM</span><span>n8n</span></div>
+      <h3>ProHES</h3>
+      <p>Framework for analytical selection of RAG hyperparameters (similarity metric, number of retrieved documents) without exhaustive search. Research at IITiS PAN.</p>
+      <div class="tags"><span>Python</span><span>Qdrant</span><span>Ollama</span><span>RAG evaluation</span></div>
     </div>
 
     <div class="card">
-      <h3>Agentic CV matching</h3>
-      <p>Recruitment pipeline combining semantic search, skill matching and seniority scoring, parallelized with asyncio.</p>
-      <div class="tags"><span>Python</span><span>asyncio</span><span>Embeddings</span></div>
+      <h3>Edge compression toolbox</h3>
+      <p>LLM-guided agentic toolbox that compresses neural networks for edge deployment under accuracy and memory constraints.</p>
+      <div class="tags"><span>LLM agents</span><span>TensorFlow</span><span>Edge AI</span></div>
+    </div>
+
+    <div class="card">
+      <h3>T-MATE</h3>
+      <p>Multi-modal anomaly and cyber-threat detector for cloud services, combining telemetry forecasting with LLM log analysis and traceable explanations.</p>
+      <div class="tags"><span>Anomaly detection</span><span>LLM</span><span>Cloud security</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Google Drive AI assistant</h3>
+      <p>Freelance project: an assistant with a full RAG pipeline over Google Drive contents and Qdrant-backed semantic search.</p>
+      <div class="tags"><span>RAG</span><span>Qdrant</span><span>Google Drive API</span></div>
     </div>
 
   </div>
@@ -142,37 +154,46 @@
   <h2>Experience</h2>
   <ul class="timeline">
     <li>
-      <span class="date">Jan 2026 - Present</span>
       <h3>co.brick</h3>
-      <h4>AI Python Developer</h4>
-      <p>Building LLM and RAG components of an AI platform for industry (knowledge management, IIoT monitoring, service desk), plus internal agents for data extraction and market intelligence.</p>
+      <h4>Junior AI Python Developer</h4>
+      <p>Sole developer of an internal AI recruitment platform, responsible for the whole application from design to production. RAG pipelines, multi-tool agents (LangGraph, Google ADK), evaluation and monitoring with Langfuse, deployment on Google Cloud (FastAPI, Docker, GKE, Helm, GitHub Actions).</p>
     </li>
     <li>
-      <span class="date">TODO - Present</span>
-      <h3>PACK (Horizon Europe)</h3>
-      <h4>Researcher</h4>
-      <p>Research on efficient and green AI; toolbox development and publications, including the CIKM 2026 workshop paper.</p>
+      <h3>IITiS PAN (Polish Academy of Sciences)</h3>
+      <h4>Junior Researcher</h4>
+      <p>Research on information retrieval and RAG optimisation. Co-developed ProHES and T-MATE, built an LLM-guided agentic toolbox for compressing neural networks for edge deployment.</p>
     </li>
     <li>
-      <span class="date">TODO - Present</span>
+      <h3>Self-employed</h3>
+      <h4>Freelance AI &amp; ML Developer</h4>
+      <p>AI agents and automation systems in Python with LangChain, LangGraph and LLM APIs for individual clients, including a RAG-based Google Drive assistant.</p>
+    </li>
+    <li>
       <h3>Silesian University of Technology</h3>
-      <h4>MSc, Computer Science (Machine Learning)</h4>
-      <p>Faculty of Applied Mathematics.</p>
+      <h4>Computer Science, Faculty of Applied Mathematics</h4>
+      <p>Engineering thesis: Android application using AI for health problem recognition.</p>
     </li>
-    <li>
-      <span class="date">TODO - TODO</span>
-      <h3>Silesian University of Technology</h3>
-      <h4>BSc / Eng., Computer Science</h4>
-      <p>TODO: temat pracy inżynierskiej.</p>
-    </li>
-    <!-- TODO: wcześniejsze prace / staże -->
   </ul>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>GenAI &amp; Agents</h3><p>LangChain, LangGraph, Google ADK, MCP, RAG, prompt engineering, LLM evaluation</p></div>
+    <div><h3>LLM APIs &amp; Models</h3><p>Gemini API, OpenAI API, Hugging Face, Ollama, LLaMA, Gemma, TensorFlow</p></div>
+    <div><h3>Vector &amp; Databases</h3><p>Qdrant, FAISS, PostgreSQL, embeddings, chunking strategies</p></div>
+    <div><h3>Backend &amp; UI</h3><p>Python, SQL, FastAPI, Streamlit, REST APIs</p></div>
+    <div><h3>Cloud &amp; LLMOps</h3><p>Google Cloud (GKE), Docker, Helm, GitHub Actions, CI/CD, Langfuse</p></div>
+    <div><h3>Data</h3><p>Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</p></div>
+  </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
 <section id="contact">
   <h2>Contact</h2>
-  <p class="email"><a href="mailto:TODO@example.com">TODO@example.com</a></p>
+  <p class="email"><a href="mailto:rafal13996@gmail.com">rafal13996@gmail.com</a></p>
+  <p>Katowice, Poland</p>
   <p><a class="btn" href="cv.pdf" target="_blank">Download CV (PDF)</a></p>
 </section>
 
