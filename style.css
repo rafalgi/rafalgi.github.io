@@ -1,0 +1,80 @@
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f6f7f9;
+  --text: #1f2933;
+  --muted: #5f6b7a;
+  --accent: #1f4e79;
+  --accent-soft: #e6eef6;
+  --border: #e3e7ec;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* nav */
+.nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); }
+.nav-inner { max-width: 960px; margin: 0 auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.brand { font-weight: 700; color: var(--text); }
+.nav nav a { margin-left: 18px; color: var(--muted); font-weight: 500; font-size: .95rem; }
+.nav nav a:hover { color: var(--accent); text-decoration: none; }
+
+/* hero */
+.hero { text-align: center; padding: 72px 20px 56px; background: linear-gradient(180deg, var(--accent-soft), var(--bg)); }
+.avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 6px 24px rgba(0,0,0,.12); }
+.hero h1 { font-family: "Source Serif 4", serif; font-size: 2.6rem; margin: 20px 0 4px; }
+.subtitle { color: var(--muted); font-size: 1.2rem; margin: 0; }
+.hero hr { width: 60px; border: 0; border-top: 3px solid var(--accent); margin: 22px auto; }
+.tagline { font-weight: 600; margin: 0 0 20px; }
+.social a { display: inline-block; margin: 4px 6px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: #fff; font-size: .9rem; }
+
+/* sections */
+main section { max-width: 960px; margin: 0 auto; padding: 56px 20px; }
+main section:nth-child(even) { background: var(--bg-alt); max-width: none; }
+main section:nth-child(even) > * { max-width: 920px; margin-left: auto; margin-right: auto; }
+h2 { font-family: "Source Serif 4", serif; font-size: 2rem; margin: 0 0 24px; }
+
+/* publications */
+.pub { display: block; padding: 20px 22px; margin-bottom: 16px; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: inherit; transition: box-shadow .2s, transform .2s; }
+.pub:hover { text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,.07); transform: translateY(-2px); }
+.pub h3 { margin: 0 0 6px; font-size: 1.1rem; color: var(--accent); }
+.venue { display: inline-block; font-size: .8rem; font-weight: 600; background: var(--accent-soft); color: var(--accent); padding: 2px 10px; border-radius: 999px; }
+.authors { margin: 8px 0 4px; color: var(--muted); font-size: .95rem; }
+.desc { margin: 0; font-size: .95rem; }
+
+/* projects */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; }
+.card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.card p { margin: 0 0 12px; font-size: .93rem; flex: 1; }
+.tags span { display: inline-block; font-size: .75rem; background: var(--bg-alt); border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; margin: 0 4px 4px 0; }
+.more { margin-top: 8px; font-weight: 600; font-size: .9rem; }
+
+/* timeline */
+.timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--border); }
+.timeline li { position: relative; padding: 0 0 28px 26px; }
+.timeline li::before { content: ""; position: absolute; left: -8px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg-alt); }
+.date { font-size: .85rem; color: var(--muted); font-weight: 600; }
+.timeline h3 { margin: 2px 0 0; font-size: 1.15rem; }
+.timeline h4 { margin: 0 0 6px; font-weight: 500; color: var(--accent); }
+.timeline p { margin: 0; font-size: .95rem; }
+
+/* contact */
+#contact { text-align: center; }
+.email { font-size: 1.2rem; font-weight: 600; }
+.btn { display: inline-block; padding: 10px 22px; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; }
+.btn:hover { text-decoration: none; opacity: .9; }
+
+footer { text-align: center; padding: 28px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 640px) {
+  .nav nav a { margin: 0 10px 0 0; }
+  .hero h1 { font-size: 2rem; }
+}
